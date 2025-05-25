@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment | True Paws Animal Clinic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logoone.png" alt="True Paws Logo">
+                    <div class="logo-text">
+                        <h1>True Paws Animal Clinic</h1>
+                        <p>Compassionate Care for Your Pets</p>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="appointment.html" class="active">Appointments</a></li>
+                        <li><a href="pethealth.html">Pet Health</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h2>Book an Appointment</h2>
+                <p>Schedule a visit with our expert veterinary team</p>
+            </div>
+        </section>
+
+        <section class="appointment-form-section">
+            <div class="container">
+                <div class="form-container">
+                    <form id="appointmentForm" action="thankyou.html" method="GET">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pet-name">Pet's Name</label>
+                            <input type="text" id="pet-name" name="pet-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pet-type">Pet Type</label>
+                            <select id="pet-type" name="pet-type" required>
+                                <option value="">Select Pet Type</option>
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                                <option value="bird">Bird</option>
+                                <option value="rabbit">Rabbit</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="generalcheckup">General Checkup</option>
+                                <option value="vaccination">Vaccination</option>
+                                <option value="dental">Dental Care</option>
+                                <option value="surgery">Surgical Procedure</option>
+                                <option value="grooming">Grooming</option>
+                                <option value="emergency">Emergency Care</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Preferred Time</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Additional Notes</label>
+                            <textarea id="notes" name="notes" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Book Appointment</button>
+                    </form>
+                    <div class="form-sidebar">
+                        <h3>Appointment Information</h3>
+                        <div class="info-box">
+                            <i class="fas fa-clock"></i>
+                            <h4>Clinic Hours</h4>
+                            <p>Monday-Friday: 8am-7pm</p>
+                            <p>Saturday: 9am-5pm</p>
+                            <p>Sunday: Emergency only</p>
+                        </div>
+                        <div class="info-box">
+                            <i class="fas fa-phone"></i>
+                            <h4>Emergency?</h4>
+                            <p>Call us immediately at:</p>
+                            <p class="emergency-phone">(267) 72719871</p>
+                        </div>
+                        <div class="info-box">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h4>Our Location</h4>
+                            <p>123 Riverwalk</p>
+                            <p>Gaborone, Unit 10</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>True Paws Animal Clinic</h3>
+                    <p>Providing compassionate veterinary care for your beloved pets since 2010. Your pet's health and happiness are our top priorities.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="appointment.html">Appointments</a></li>
+                        <li><a href="pethealth.html">Pet Health</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Riverwalk Mall, Gaborone, Unit 10</p>
+                        <p><i class="fas fa-phone"></i> (267) 76967681</p>
+                        <p><i class="fas fa-envelope"></i> truepawsclinic@gmail.com</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 8am-7pm, Sat: 9am-5pm, Sun: Emergency only</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 True Paws Animal Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
